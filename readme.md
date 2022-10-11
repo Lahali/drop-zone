@@ -7,5 +7,5 @@ El progama detecta cualquier archivo que sea arrastrado a la zona subida. No hay
 He utilizado ES6, CSS y HTML, sin ningún Framework ni librería asociado, así se facilita la visualización del prototipo y podemos tener un archivo de demo más liviano.
 
 ## DEMO
-Aquí se puede visualizar el proyecto.
+[Aquí](https://drop-zone-halimeh.vercel.app/) se puede visualizar el proyecto.
 
