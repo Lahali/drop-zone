@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Josefin+Sans:ital,wght@0,200;0,300;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Drop Zone</title>
+  </head>
+  <body>
+    <main>
+      <div class="welcome">
+        <h1>Bienvenidos a DDrop</h1>
+        <p>
+          Para subir tus archivos de forma simple a Drive, </br>
+          puedes hacer login a través de Google.
+        </p>
+        <hr>
+        <button id="login-button" class="login-button" onclick="openModal()">
+          Login con Google
+        </button>
+      </div>
+
+      <div class="modal-container" id="modal-login">
+        <div class="modal-content">
+          <p>Introduce tus datos</p>
+          <input type="text" placeholder="usuario"></br>
+          <input type="password" placeholder="contraseña"></br>
+          <button class="modal-login" id="close-modal">Iniciar sesión</button>
+        </div>
+      </div>
+
+      
+      <div
+      class="drag-and-drop"
+      id="drop-zone">
+      <div class="modal-container-error" id="modal-error">
+        <div class="modal-content">
+          <h1>Ups, algo ha ido mal</h1>
+           <p>No hemos podido subir tu archivo, revisa el formato o inténtalo de nuevo</p>
+          <button class="modal-close-error" id="close-modal-error">Cerrar</button>
+        </div>
+      </div>
+        <h1 id="uploadTitle">ARRASTRA TUS ARCHIVOS AQUÍ</h1>
+        <h2 id="files-dropped"></h2>
+      </div>
+      <footer>
+        <button class="upload-button" id="upload-button" onclick="upload()">Subir archivos</button>
+      </footer>
+    </main>
+  </body>
+  <script src="./main.js"></script>
+</html>
